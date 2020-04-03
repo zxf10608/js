@@ -1,7 +1,7 @@
 
 // ==UserScript==
 // @exclude       *
-// @author        zxf10608
+// @author        Mike Medley & zxf10608
 // @name          GM_config_zh-CN
 // @version       1.3.4
 // @description   GM_config_中文版
