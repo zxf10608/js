@@ -1,6 +1,5 @@
 
 // ==UserScript==
-// @exclude       *
 // @author        Mike Medley & zxf10608
 // @name          GM_config_zh-CN
 // @version       1.3.4
@@ -8,6 +7,7 @@
 // @grant         GM_getValue
 // @grant         GM_setValue
 // @grant         GM_deleteValue
+// @exclude       *
 // @license       LGPL 3
 // ==/UserScript==
 
