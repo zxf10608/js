@@ -1,0 +1,23 @@
+﻿cd GM_config_zh-CN
+
+git init
+
+
+
+git add gallerytest.gif
+git commit -m "4.12提交更新"
+git remote add origin https://gitee.com/zxf10608/js.git
+git push -u origin master
+
+
+git push origin master
+
+
+git config --system --unset credential.helper
+
+git push -f 强制推送 提交失败解决
+
+
+
+用户名 zxf10608
+密码 BBC1060159617
