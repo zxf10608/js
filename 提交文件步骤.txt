@@ -5,12 +5,13 @@ git init
 
 
 git add gallerytest.gif
-git commit -m "4.12提交更新"
+git commit -m "4.12提交更新2"
 git remote add origin https://gitee.com/zxf10608/js.git
 git push -u origin master
 
 
 git push origin master
+
 
 
 git config --system --unset credential.helper
