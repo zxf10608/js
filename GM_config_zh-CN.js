@@ -1,16 +1,13 @@
 
 // ==UserScript==
-// @exclude       *
-// @author        Mike Medley <medleymind@gmail.com> (https://github.com/sizzlemctwizzle/GM_config)
-// @icon          https://raw.githubusercontent.com/sizzlemctwizzle/GM_config/master/gm_config_icon_large.png
+// @author        Mike Medley & zxf10608
 // @name          GM_config_zh-CN
-// @version       1.3.4
+// @version       1.3.5
 // @description   GM_config_中文版
-// @copyright     2009+, Mike Medley (https://github.com/sizzlemctwizzle)
-// @license       LGPL-3.0-or-later; https://raw.githubusercontent.com/sizzlemctwizzle/GM_config/master/LICENSE
 // @grant         GM_getValue
 // @grant         GM_setValue
 // @grant         GM_deleteValue
+// @exclude       *
 // @license       LGPL 3
 // ==/UserScript==
 
@@ -22,30 +19,6 @@
 	4、更新部分翻译
 */
 
-/*
-Copyright 2009+, GM_config Contributors (https://github.com/sizzlemctwizzle/GM_config)
-
-GM_config Contributors:
-        Mike Medley <medleymind@gmail.com>
-        Joe Simmons
-        Izzy Soft
-        Marti Martz
-
-GM_config is distributed under the terms of the GNU Lesser General Public License.
-
-        GM_config is free software: you can redistribute it and/or modify
-        it under the terms of the GNU Lesser General Public License as published by
-        the Free Software Foundation, either version 3 of the License, or
-        (at your option) any later version.
-
-        This program is distributed in the hope that it will be useful,
-        but WITHOUT ANY WARRANTY; without even the implied warranty of
-        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-        GNU Lesser General Public License for more details.
-
-        You should have received a copy of the GNU Lesser General Public License
-        along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
 
 // The GM_config constructor
 function GM_configStruct() {
