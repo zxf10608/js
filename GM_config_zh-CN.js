@@ -1,7 +1,7 @@
 
 // ==UserScript==
-// @author        Mike Medley & zxf10608
 // @name          GM_config_zh-CN
+// @author        Mike Medley & zxf10608
 // @version       1.3.5
 // @description   GM_config_中文版
 // @grant         GM_getValue
