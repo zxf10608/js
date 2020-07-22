@@ -17,6 +17,7 @@
     2、select 新增了 textContents 数组。
 	3、新增了skin: 'tab'换页切换菜单样式
 	4、更新部分翻译
+	5、优化字体显示效果
 */
 
 
@@ -47,8 +48,8 @@ function GM_configInit(config, args) {
                 "#GM_config { background: #FFF; }",
                 "#GM_config input[type='radio'] { margin-right: 8px; }",
                 "#GM_config .indent40 { margin-left: 40%; }",
-                "#GM_config .field_label { font-size: 15px; font-weight: bold; margin-right: 6px; }",
-                "#GM_config .radio_label { font-size: 15px; }",
+                "#GM_config .field_label { font-size: 14px; font-weight: bold; margin-right: 6px; }",
+                "#GM_config .radio_label { font-size: 14px; }",
                 "#GM_config .block { display: block; }",
                 "#GM_config .saveclose_buttons { margin: 16px 10px 10px; padding: 2px 12px; }",
                 "#GM_config .reset, #GM_config .reset a," +
