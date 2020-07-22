@@ -2,7 +2,7 @@
 // ==UserScript==
 // @name          GM_config_zh-CN
 // @author        Mike Medley & zxf10608
-// @version       1.3.5
+// @version       1.3.6
 // @description   GM_config_中文版
 // @grant         GM_getValue
 // @grant         GM_setValue
@@ -47,8 +47,8 @@ function GM_configInit(config, args) {
                 "#GM_config { background: #FFF; }",
                 "#GM_config input[type='radio'] { margin-right: 8px; }",
                 "#GM_config .indent40 { margin-left: 40%; }",
-                "#GM_config .field_label { font-size: 12px; font-weight: bold; margin-right: 6px; }",
-                "#GM_config .radio_label { font-size: 12px; }",
+                "#GM_config .field_label { font-size: 15px; font-weight: bold; margin-right: 6px; }",
+                "#GM_config .radio_label { font-size: 15px; }",
                 "#GM_config .block { display: block; }",
                 "#GM_config .saveclose_buttons { margin: 16px 10px 10px; padding: 2px 12px; }",
                 "#GM_config .reset, #GM_config .reset a," +
@@ -58,10 +58,10 @@ function GM_configInit(config, args) {
                 "#GM_config .center { text-align: center; }",
                 "#GM_config .section_header_holder { margin-top: 8px; }",
                 "#GM_config .config_var { margin: 0 0 4px; }",
-                "#GM_config .section_header { background: #414141; border: 1px solid #000; color: #FFF;",
-                " font-size: 13pt; margin: 0; }",
+                "#GM_config .section_header { background: #414141; border: 1px solid #000; color: #FFF;" +
+                  " font-size: 12pt; margin: 0; }",
                 "#GM_config .section_desc { background: #EFEFEF; border: 1px solid #CCC; color: #575757;" +
-                  " font-size: 9pt; margin: 0 0 6px; }",
+                  " font-size: 10pt; margin: 0 0 6px; }",
                 // newer
                 "#GM_config input[type='number'] { width: 60px; }",
                 "#GM_config .nav-tabs { margin: 10 0}",
@@ -76,10 +76,10 @@ function GM_configInit(config, args) {
                 "#GM_config .inline input[type='checkbox'] { margin-left: 4px; }",
                 "#GM_config .inline .config_var { margin-left: 15px; }",
                 // 内容样式
-                "#GM_config .config_var { font-size: 12px; padding: 5px; margin: 0; }",
+                "#GM_config .config_var { font-size: 14px; padding: 5px; margin: 0; }",
                 "#GM_config .config_header a { text-decoration: none; color: #000; }",
                 "#GM_config .nav-tabs { margin: 20 0}",
-                "#GM_config .nav-tabs > div { font-size: 14px; color: #999; cursor: pointer; padding: 10px 20px; }",
+                "#GM_config .nav-tabs > div { font-size: 15px; color: #999; cursor: pointer; padding: 10px 20px; }",
                 "#GM_config .nav-tabs > .active { cursor: default; color: #FFF; }",
                 "#GM_config .nav-tabs > div:hover { color: #FFF; }",
                 ].join('\n') + '\n',
