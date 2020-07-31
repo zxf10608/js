@@ -2,7 +2,7 @@
 // ==UserScript==
 // @name          GM_config_zh-CN
 // @author        Mike Medley & zxf10608
-// @version       1.3.6
+// @version       1.3.7
 // @description   GM_config_中文版
 // @grant         GM_getValue
 // @grant         GM_setValue
@@ -74,7 +74,7 @@ function GM_configInit(config, args) {
                 "#GM_config textarea { width: 98%; height: 45px; margin-top: 5px; }",
                 "#GM_config .field_label { display: inline-block; font-weight: normal; }",
                 // 在同一行内的设置
-                "#GM_config .inline input[type='checkbox'] { margin-left: 4px; }",
+                "#GM_config .inline input[type='checkbox'] {margin: 3px 3px 3px 0px;}",
                 "#GM_config .inline .config_var { margin-left: 15px; }",
                 // 内容样式
                 "#GM_config .config_var { font-size: 14px; padding: 5px; margin: 0; }",
