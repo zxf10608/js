@@ -3,7 +3,7 @@
 // @author        zxf10608
 // ==UserLibrary==
 // @name          115decode
-// @version       1.0
+// @version       1.1
 // @license       MIT
 // @description   115下载请求编码解码器
 // ==/UserScript==
@@ -130,7 +130,6 @@
 	};
 
 	function m115_encode(plaintext) {
-		console.log('m115_encode_before:' + plaintext);
 		key_l = g_key_l;
 		m115_l_rnd_key = genRandom(16);
 		m115_xorinit(m115_l_rnd_key, 4);
@@ -139,12 +138,10 @@
 		var text = arrayTostring(m115_l_rnd_key) + arrayTostring(xortext);
 		var ciphertext = pub.encrypt(text);
 		ciphertext = encodeURIComponent(forge.util.encode64(ciphertext));
-		console.log('m115_encode_after:' + ciphertext);
 		return ciphertext;
 	};
 
 	function m115_decode(ciphertext) {
-		console.log('m115_decode');
 		var bciphertext = forge.util.decode64(ciphertext);
 		var block = bciphertext.length / (128);
 		var plaintext = '';
