@@ -3,14 +3,14 @@
 // @author        zxf10608
 // ==UserLibrary==
 // @name          115decode
-// @version       1.1
+// @version       1.2
 // @license       MIT
 // @description   115下载请求编码解码器
 // ==/UserScript==
 
 // ==/UserLibrary==
-	
-	
+
+
 	//公匙
 	var pub_key = '-----BEGIN PUBLIC KEY-----\
 	MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDR3rWmeYnRClwLBB0Rq0dlm8Mr\
@@ -117,7 +117,6 @@
 		return secret;
 	};
 
-
 	function genRandom(len) {
 		var keys = [];
 		var chars = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz23456789';
@@ -128,11 +127,13 @@
 		}
 		return keys;
 	};
-
+	
+	var m115_l_rnd_key = genRandom(16);
+	m115_xorinit(m115_l_rnd_key, 4);
+	
 	function m115_encode(plaintext) {
 		key_l = g_key_l;
-		m115_l_rnd_key = genRandom(16);
-		m115_xorinit(m115_l_rnd_key, 4);
+
 		var tmp = xor115_enc(stringToArray(plaintext), key_s).reverse();
 		var xortext = xor115_enc(tmp, key_l);
 		var text = arrayTostring(m115_l_rnd_key) + arrayTostring(xortext);
@@ -142,12 +143,11 @@
 	};
 
 	function m115_decode(ciphertext) {
-		var bciphertext = forge.util.decode64(ciphertext);
-		var block = bciphertext.length / (128);
-		var plaintext = '';
-
-		var index = 0;
-		for (var i = 1; i <= block; ++i) {
+		let bciphertext = forge.util.decode64(ciphertext);
+		let block = bciphertext.length / (128);
+		let plaintext = '';
+		let index = 0;
+		for (let i = 1; i <= block; ++i) {
 			plaintext += priv.decrypt(bciphertext.slice(index, i * 128));
 			index += 128;
 		}
